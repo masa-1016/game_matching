@@ -1,24 +1,61 @@
-# README
+# アプリケーション名
+game_matching
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+・コンセプト  バトルロワイヤル系（三人一組）のゲームで円滑にPT募集をかける事が出来る
+・ターゲット  10代後半〜30代前半、男性の割合多い
 
-Things you may want to cover:
+# テーブル設計
 
-* Ruby version
+## users テーブル
 
-* System dependencies
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| nickname           | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
+| profile            | text   | null: false |
 
-* Configuration
+### Association
 
-* Database creation
+- has_many :room_users
+- has_many :rooms, through: :room_users
+- has_many :messages
 
-* Database initialization
+## rooms テーブル
 
-* How to run the test suite
+| Column    | Type       | Options     |
+| --------- | ---------- | ----------- |
+| name      | string     | null: false |
+| platform  | string     | null: false |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
 
-* Deployment instructions
+- has_many :room_users
+- has_many :users, through: :room_users
+- has_many :messages
 
-* ...
+## room_users テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
+
+## messages テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| content | string     |                                |
+| user    | references | null: false, foreign_key: true |
+| room    | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
