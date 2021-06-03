@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+}
+.side-bar {
+  background-color: #99CCFF;
+  width: 300px;
+  height: calc(100vh - 80px);
+}
+.chat {
+  background-color: #FFFFFF;
+  width: calc(100vw - 300px);
+}

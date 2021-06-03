@@ -32,6 +32,7 @@ game_matching
 | Column    | Type       | Options     |
 | --------- | ---------- | ----------- |
 | name      | string     | null: false |
+| game_id   | integer    | null: false |
 | platform  | string     | null: false |
 
 ### Association
