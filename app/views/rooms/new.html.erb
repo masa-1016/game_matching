@@ -14,7 +14,7 @@
       <div class='chat-room-form__field--left'>
         <%= f.label :ゲームタイトル, class: 'chat-room-form__label'%>
       </div>
-      <%= f.collection_select(:game_id, Game.all, :id, :name, {}) %>
+      <%= f.collection_select(:game_id, Game.all, :id, :name, {},class:"select-box") %>
       <div class='chat-room-form__field--right'>
       </div>
     </div>
@@ -22,7 +22,7 @@
       <div class='chat-room-form__field--left'>
         <%= f.label :プラットフォーム, class: 'chat-room-form__label'%>
       </div>
-      <%= f.collection_select(:platform_id, Platform.all, :id, :name, {}) %>
+      <%= f.collection_select(:platform_id, Platform.all, :id, :name, {},class:"select-box") %>
       <div class='chat-room-form__field--right'>
       </div>
     </div>
