@@ -1,6 +1,7 @@
 class RoomsController < ApplicationController
 
   def index
+    @rooms = Room.all.order(id: "DESC")
   end
 
   def new
