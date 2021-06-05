@@ -2,9 +2,10 @@
   width: 980px;
   margin: 50px auto;
   padding: 60px;
+  color: #000080;
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   float: left;
