@@ -30,11 +30,11 @@ game_matching
 
 ## rooms テーブル
 
-| Column    | Type       | Options     |
-| --------- | ---------- | ----------- |
-| name      | string     | null: false |
-| game_id   | integer    | null: false |
-| platform  | string     | null: false |
+| Column      | Type    | Options     |
+| ----------- | ------- | ----------- |
+| name        | string  | null: false |
+| game_id     | integer | null: false |
+| platform_id | integer | null: false |
 
 ### Association
 
