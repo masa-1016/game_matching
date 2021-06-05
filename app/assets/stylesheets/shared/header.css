@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #000080;
+  width: 100vw;
+  height: 80px;
+  font-family: arial black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.lists-login {
+  display: flex;
+  min-width: 200px;
+}
+
+
+.app-name {
+  text-decoration: none;
+  color: 	#FFFFFF;
+  font-size: 50px;
+  padding: 10px;
+}
+
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 2vw;
+  color: 	#FFFFFF;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: 	#FFFFFF;
+}
+
+.login {
+  text-decoration: none;
+  margin-right: 2vw;
+  color: 	#FFFFFF;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #FFFFFF;
+}
