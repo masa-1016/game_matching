@@ -10,6 +10,7 @@ game_matching
 ・ルーム作成機能（上限三人）
 ・チャット機能（リアルタイムで表示）
 ・一覧表示をゲーム別に絞り込む
+・ユーザー詳細ページ作成
 
 # テーブル設計
 
@@ -30,11 +31,11 @@ game_matching
 
 ## rooms テーブル
 
-| Column    | Type       | Options     |
-| --------- | ---------- | ----------- |
-| name      | string     | null: false |
-| game_id   | integer    | null: false |
-| platform  | string     | null: false |
+| Column      | Type    | Options     |
+| ----------- | ------- | ----------- |
+| name        | string  | null: false |
+| game_id     | integer | null: false |
+| platform_id | integer | null: false |
 
 ### Association
 
