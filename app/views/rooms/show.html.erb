@@ -11,11 +11,11 @@
       <tbody>
         <tr>
           <%# <th class="detail-room">ルームホスト</th>
-          <td class="detail-value"><%= @room.user.nickname %></td> %>
+          <td class="detail-value"><%= @room.user[0].nickname %></td>
         </tr>
         <tr>
           <%# <th class="detail-item">プロフィール</th>
-          <td class="detail-value"><%= @room.user.profile %></td> %>
+          <td class="detail-value"><%= @room.user.profile %></td>
         </tr>
         <tr>
           <th class="detail-item">ゲームタイトル</th>

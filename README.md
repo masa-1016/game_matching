@@ -10,7 +10,7 @@ game_matching
 ・ルーム作成機能（上限三人）
 ・チャット機能（リアルタイムで表示）
 ・一覧表示をゲーム別に絞り込む
-・ユーザー詳細ページ
+・ユーザー詳細ページ作成
 
 # テーブル設計
 
@@ -25,7 +25,8 @@ game_matching
 
 ### Association
 
-- belongs_to :room
+- has_many :room_users
+- has_many :rooms, through: :room_users
 - has_many :messages
 
 ## rooms テーブル
@@ -38,8 +39,21 @@ game_matching
 
 ### Association
 
-- has_many :users
+- has_many :room_users
+- has_many :users, through: :room_users
 - has_many :messages
+
+## room_users テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
 
 ## messages テーブル
 
