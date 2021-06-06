@@ -13,7 +13,7 @@
   <% @rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
-        <%= link_to room.name, "#" %>
+        <%= link_to room.name, room_path(room.id) %>
       </div>
       <div class='detail'>
         <%= "ゲームタイトル #{room.game.name}"%><br><%= "プラットフォーム #{room.platform.name}"%>

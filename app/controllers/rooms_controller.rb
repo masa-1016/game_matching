@@ -4,12 +4,17 @@ class RoomsController < ApplicationController
     @rooms = Room.all.order(id: "DESC")
   end
 
+  def show
+    @room = Room.find(params[:id])
+  end
+
   def new
     @room = Room.new
   end
 
   def create
     @room = Room.new(room_params)
+    binding.pry
     if @room.save
       redirect_to root_path
     else
@@ -17,10 +22,11 @@ class RoomsController < ApplicationController
     end
   end
 
+
   private
 
   def room_params
-    params.require(:room).permit(:name, :game_id, :platform_id)
+    params.require(:room).permit(:name, :game_id, :platform_id, user_ids: [])
   end
 
 end
