@@ -10,10 +10,10 @@
 
 <div class="rooms">
   <h2 class='room-title'>< ルーム一覧 ></h2>
-  <% @rooms.each do |room| %>
+  <% current_user.rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
-        <%= link_to room.name, room_path(room.id) %>
+        <%= link_to room.name, room_messages_path(room) %>
       </div>
       <div class='detail'>
         <%= "ゲームタイトル #{room.game.name}"%><br><%= "プラットフォーム #{room.platform.name}"%>
