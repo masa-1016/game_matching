@@ -1,31 +1,3 @@
 <div class="header">
   <%= render "shared/header" %>
 </div>
-
-<div class="room-show">
-  <div class="room-box">
-    <div class="room-explain-box">
-      <span><%= @room.name %></span>
-    </div>
-    <table class="detail-table">
-      <tbody>
-        <tr>
-          <%# <th class="detail-room">ルームホスト</th>
-          <td class="detail-value"><%= @room.user[0].nickname %></td>
-        </tr>
-        <tr>
-          <%# <th class="detail-item">プロフィール</th>
-          <td class="detail-value"><%= @room.user.profile %></td>
-        </tr>
-        <tr>
-          <th class="detail-item">ゲームタイトル</th>
-          <td class="detail-value"><%= @room.game.name %></td>
-        </tr>
-        <tr>
-          <th class="detail-item">プラットフォーム</th>
-          <td class="detail-value"><%= @room.platform.name %></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
