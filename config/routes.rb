@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'room_lists/index'
   devise_for :users
   root to: "rooms#index"
   resources :users, only: [:edit, :update]

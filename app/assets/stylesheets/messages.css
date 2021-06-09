@@ -21,7 +21,7 @@
 }
 .create-room a {
   padding: 8px 19px;
-  margin: 2em 0;
+  margin: 2em 0 2em 10px;
   color: #2c2c2f;
   background: #cde4ff;
   border-top: solid 5px #5989cf;
@@ -30,7 +30,7 @@
 }
 .enter-room a{
   padding: 8px 19px;
-  margin: 2em 0;
+  margin: 2em 10px 2em 0;
   color: #2c2c2f;
   background: #cde4ff;
   border-top: solid 5px #5989cf;
