@@ -1,11 +1,6 @@
 class RoomsController < ApplicationController
 
-  # def index
-  #   @rooms = Room.all.order(id: "DESC")
-  # end
-
   def show
-    # @rooms = Room.all.order(id: "DESC")
     @room = Room.find(params[:id])
   end
 
