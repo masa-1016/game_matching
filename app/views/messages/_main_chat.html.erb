@@ -6,7 +6,9 @@
   </div>
   <div class="right-header">
     <div class="header-button">
-      <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
+    <% if current_user.id == @room.user_ids[0] %>
+      <%= link_to "ルームを削除", room_path(@room), method: :delete %>
+    <% end%>
     </div>
   </div>
 </div>

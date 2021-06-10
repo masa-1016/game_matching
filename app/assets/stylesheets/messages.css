@@ -44,6 +44,11 @@
   overflow: scroll;
 }
 
+.room-lists {
+  height: calc(100vh - 270px);
+  overflow: scroll;
+}
+
 .room-title {
   color: #2c2c2f;
   margin: 10px 0;
