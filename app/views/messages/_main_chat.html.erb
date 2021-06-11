@@ -7,7 +7,7 @@
   <div class="right-header">
     <div class="header-button">
     <% if current_user.id == @room.user_ids[0] %>
-      <%= link_to "ルームを削除", room_path(@room), method: :delete %>
+      <%= link_to "ルームを削除", room_path(@room), method: :delete, data: { confirm: "削除しますか？" } %>
     <% end%>
     </div>
   </div>
