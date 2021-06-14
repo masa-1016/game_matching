@@ -4,6 +4,7 @@ game matching
 # アプリケーション概要
 ・コンセプト  ゲーム名で円滑にPT募集をかける事が出来る
 ・ターゲット  10代後半〜30代前半、男性の割合多い
+<img width="1440" alt="822be929a3ba60a4a55259a681ccd63a" src="https://user-images.githubusercontent.com/77272798/121966323-66098880-cda9-11eb-8704-fa36a90dd916.png">
 
 # 実装済み機能
 ・ユーザー管理機能（単体テストコード有）
